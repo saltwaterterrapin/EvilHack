@@ -3790,8 +3790,7 @@ int material;
         otmp->oeroded = 0;
     if ((otmp->oeroded2) && !is_corrodeable(otmp) && !is_rottable(otmp))
         otmp->oeroded2 = 0;
-    if (otmp->oerodeproof && !is_damageable(otmp)
-        && (otmp->material != GLASS) && (otmp->material != GEMSTONE))
+    if (otmp->oerodeproof && !is_damageable(otmp))
         maybe_erodeproof(otmp, 0);
 }
 
